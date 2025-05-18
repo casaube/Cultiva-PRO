@@ -51,7 +51,7 @@ O chatbot é capaz de responder a perguntas comuns sobre:
     * Um link público do Gradio (terminado em `.gradio.live`) aparecerá no output da célula. Clique nele para abrir a interface do chatbot no seu navegador.
 
 ## Exemplo de Interface
-
+![Interface do Chatbot](./images/interface.png "Demonstração da Interface")
 
 
 ## Licença
