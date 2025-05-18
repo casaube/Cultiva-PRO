@@ -55,4 +55,6 @@ O chatbot é capaz de responder a perguntas comuns sobre:
 
 
 ## Licença
+Apache License
+Version 2.0
 
