@@ -1,5 +1,9 @@
 # Cultiva-PRO
 Chatbot para produtores rurais utilizando Google Gemini e Gradio, desenvolvido em Python.
+Este projeto foi resultado da participação da imersão da Alura com o Google.
+
+Link: https://c5ec38a044869c0a13.gradio.live/
+
 # Chatbot Agro IA com Gemini e Gradio
 
 Este é um chatbot de assistência para pequenos produtores rurais, construído com Python, a API Google Gemini e a interface Gradio.
