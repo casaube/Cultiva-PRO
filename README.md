@@ -22,11 +22,10 @@ O chatbot é capaz de responder a perguntas comuns sobre:
 1.  **Clone ou Baixe este Repositório (ou apenas o arquivo .ipynb).**
 
 2.  **Requisitos/Dependências:**
-    Você precisará das seguintes bibliotecas Python. Você pode instalá-las usando pip:
-    ```bash
-    pip install google-generativeai gradio
-    ```
-    (Opcional: Se você quiser, pode criar um arquivo `requirements.txt` no seu repositório com estas duas linhas e instruir os usuários a usar `pip install -r requirements.txt`)
+            As bibliotecas Python necessárias estão listadas no arquivo `requirements.txt`. Instale-as usando pip:
+            ```bash
+            pip install -r requirements.txt
+            ```
 
 3.  **Configuração da Chave de API do Google Gemini:**
     * **IMPORTANTE:** Este projeto requer uma chave de API do Google Gemini.
@@ -36,17 +35,26 @@ O chatbot é capaz de responder a perguntas comuns sobre:
         3.  Adicione um novo secret com o nome `GOOGLE_API_KEY` e cole sua chave no campo "Value".
         4.  Certifique-se de que "Notebook access" está habilitado para este secret.
     * **Se estiver rodando localmente (fora do Colab):**
-        Você precisará modificar o código para carregar a API Key de uma variável de ambiente ou de um arquivo de configuração seguro. Não coloque sua chave diretamente no código!
-        Exemplo (usando variável de ambiente):
-        ```python
-        import os
-        API_KEY = os.environ.get('GOOGLE_API_KEY')
-        ```
-        E então você precisaria definir a variável de ambiente `GOOGLE_API_KEY` no seu sistema.
+            O notebook foi adaptado para tentar carregar a API Key da variável de ambiente `GOOGLE_API_KEY` se não estiver rodando no Colab ou se a chave não for encontrada nos Secrets do Colab.
+            Antes de executar o notebook localmente, você precisa definir esta variável de ambiente no seu terminal:
+
+            Para Linux/macOS:
+            ```bash
+            export GOOGLE_API_KEY="SUA_CHAVE_API_AQUI"
+            ```
+            Para Windows (Command Prompt):
+            ```bash
+            set GOOGLE_API_KEY=SUA_CHAVE_API_AQUI
+            ```
+            Para Windows (PowerShell):
+            ```bash
+            $env:GOOGLE_API_KEY="SUA_CHAVE_API_AQUI"
+            ```
+            Lembre-se de substituir `"SUA_CHAVE_API_AQUI"` ou `SUA_CHAVE_API_AQUI` pela sua chave real. Não coloque sua chave diretamente no código! O notebook irá procurar por `GOOGLE_API_KEY`.
 
 4.  **Executando o Chatbot (no Google Colab):**
-    * Abra o arquivo `.ipynb` no Google Colab.
-    * Execute a célula que instala as bibliotecas (se houver).
+    * Abra o arquivo Chatbot_Agro_IA.ipynb no Google Colab.
+    * Execute a primeira célula para instalar as bibliotecas (se ainda não o fez no seu ambiente e estiver no Colab).
     * Execute a célula principal do código do chatbot.
     * Um link público do Gradio (terminado em `.gradio.live`) aparecerá no output da célula. Clique nele para abrir a interface do chatbot no seu navegador.
 
