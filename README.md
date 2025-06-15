@@ -1,4 +1,13 @@
+---
+title: Cultiva Pro
+emoji: 🌱
+colorFrom: green
+colorTo: blue
+sdk: gradio
+app_file: app.py
+---
 # Cultiva-PRO
+
 Chatbot para produtores rurais utilizando Google Gemini e Gradio, desenvolvido em Python.
 Este projeto foi resultado da participação da imersão da Alura com o Google.
 
