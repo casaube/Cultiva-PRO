@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Cultiva Pro
 emoji: 🌱
 colorFrom: green
@@ -67,3 +68,18 @@ O chatbot é capaz de responder a perguntas comuns sobre:
 ## Licença
 Apache License
 Version 2.0
+=======
+title: CultivaMaisPro
+emoji: 😻
+colorFrom: purple
+colorTo: green
+sdk: gradio
+sdk_version: 5.34.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: Cultiva Mais Pro chatbot que ajuda produtores rurais
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 858d64fe2cd4a3c9a0d3e76f4cc21496340d050f
