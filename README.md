@@ -5,6 +5,7 @@ colorFrom: green
 colorTo: blue
 sdk: gradio
 app_file: app.py
+sdk_version: 5.34.0
 ---
 # Cultiva-PRO
 
@@ -66,4 +67,3 @@ O chatbot é capaz de responder a perguntas comuns sobre:
 ## Licença
 Apache License
 Version 2.0
-
